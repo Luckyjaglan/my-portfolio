@@ -624,7 +624,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Lucky Jaglan. All rights reserved.
         </p>
       </div>
     </footer>
