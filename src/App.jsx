@@ -104,7 +104,7 @@ const HeroSection = () => {
           <a href="https://linkedin.com/in/lucky-jaglan" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-sky-400 transition-colors" aria-label="LinkedIn Profile">
             <Linkedin size={32} />
           </a>
-          <a href="mailto:luckyjaglan47@gmail.com" className="text-gray-300 hover:text-sky-400 transition-colors" aria-label="Email Me">
+          <a href="mailto:luckyjaglan47@gmail.com" target="_blank" className="text-gray-300 hover:text-sky-400 transition-colors" aria-label="Email Me">
             <Mail size={32} />
           </a>
         </div>
@@ -188,7 +188,7 @@ const ProjectsSection = () => {
       title: 'Study Buddy',
       description: 'A one stop solution for notes, syllabus and study material.',
       builtWith: ['HTML5', 'CSS3', 'Javascript'],
-      link: 'https://github.com/your/osubackup',
+      link: 'https://github.com/Luckyjaglan/Study-Buddy',
       image: '/assets/Project2_img.png',
       imageOnRight: true,
     },
@@ -336,11 +336,13 @@ const ProjectsSection = () => {
 // --- Skills Section Component ---
 const SkillsSection = () => {
   const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS','Git', 'REST APIs', 'DSA', 'Problem Solving', 'Communication'
+    'Python', 'C', 'HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS','Git', 'REST APIs', 'DSA', 'Problem Solving', 'Communication'
   ];
 
   // Mapping for skill-specific colors using Tailwind CSS classes
   const skillColors = {
+    'Python': 'text-blue-700',
+    'C': 'text-blue-800',
     'HTML': 'text-orange-600',
     'CSS': 'text-blue-600',
     'JavaScript': 'text-yellow-500', // Yellow for JavaScript
@@ -357,6 +359,8 @@ const SkillsSection = () => {
   const getSkillData = (skillName) => {
     const icon = (() => {
       switch (skillName) {
+        case 'Python': return <Terminal size={32} />;
+        case 'C': return <Code size={32} />;
         case 'HTML': return <Code size={32} />;
         case 'CSS': return <Code size={32} />;
         case 'JavaScript': return <Zap size={32} />; // Using Zap for JS
@@ -619,7 +623,7 @@ const Footer = () => {
           <a href="https://x.com/jaglan_lucky" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-400 transition-colors" aria-label="Twitter Profile">
             <Twitter size={28} />
           </a>
-          <a href="mailto:luckyjaglan47@gmail.com" className="text-gray-400 hover:text-sky-400 transition-colors" aria-label="Email Me">
+          <a href="mailto:luckyjaglan47@gmail.com" target="_blank" className="text-gray-400 hover:text-sky-400 transition-colors" aria-label="Email Me">
             <Mail size={28} />
           </a>
         </div>
