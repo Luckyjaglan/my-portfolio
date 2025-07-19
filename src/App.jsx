@@ -179,7 +179,7 @@ const ProjectsSection = () => {
       title: 'My Portfolio',
       description: 'My self-made portfolio website you\'re currently looking at.',
       builtWith: ['React.js', 'Tailwind CSS', 'Vercel'],
-      link: 'https://github.com/your/portfolio',
+      link: 'https://github.com/Luckyjaglan/my-portfolio',
       image: '/assets/Project1_img.png',
       imageOnRight: false,
     },
