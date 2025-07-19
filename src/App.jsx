@@ -58,7 +58,7 @@ const Navbar = () => {
 // --- Hero (Home) Section Component ---
 const HeroSection = () => {
   // Placeholder background image URL (replace with your own)
-  const backgroundImage = '/src/assets/home_bg.jpg';
+  const backgroundImage = '/assets/home_bg.jpg';
 
   const handleScrollToSection = (e, sectionId) => {
     e.preventDefault();
@@ -134,7 +134,7 @@ const HeroSection = () => {
 // --- About Section Component ---
 const AboutSection = () => {
   // Placeholder image for About section (replace with your own)
-  const aboutImage = "/src/assets/aboutme_img.jpg"; // User's image path
+  const aboutImage = "/assets/aboutme_img.jpg"; // User's image path
 
   return (
     // Height adapts to content with appropriate vertical padding, now transparent to inherit page background, and a bottom border
@@ -180,7 +180,7 @@ const ProjectsSection = () => {
       description: 'My self-made portfolio website you\'re currently looking at.',
       builtWith: ['React.js', 'Tailwind CSS', 'Vercel'],
       link: 'https://github.com/your/portfolio',
-      image: '/src/assets/Project1_img.png',
+      image: '/assets/Project1_img.png',
       imageOnRight: false,
     },
     {
@@ -189,7 +189,7 @@ const ProjectsSection = () => {
       description: 'A one stop solution for notes, syllabus and study material.',
       builtWith: ['HTML5', 'CSS3', 'Javascript'],
       link: 'https://github.com/your/osubackup',
-      image: '/src/assets/Project2_img.png',
+      image: '/assets/Project2_img.png',
       imageOnRight: true,
     },
     {
@@ -198,7 +198,7 @@ const ProjectsSection = () => {
       description: 'A GUI based sql database management system.',
       builtWith: ['Tkinter', 'MySql'],
       link: 'https://github.com/Luckyjaglan/Student-Database-Management-System-Tkinter-MySQL',
-      image: '/src/assets/Project3_img.png',
+      image: '/assets/Project3_img.png',
       imageOnRight: false,
     },
   
