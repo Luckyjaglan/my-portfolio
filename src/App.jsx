@@ -159,7 +159,7 @@ const AboutSection = () => {
       {/* Parent container for image and text, using items-stretch to match heights */}
       {/* max-w-5xl is back to constrain the content width */}
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-stretch gap-12">
-        {/* Image Container on Left Half - Responsive width, image dictates its height */}
+        {/* Image on Left Half - Responsive width, image dictates its height */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src={aboutImage}

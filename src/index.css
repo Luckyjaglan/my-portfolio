@@ -1,40 +1,26 @@
-/*
-  This file should contain only global styles that don't conflict with Tailwind CSS.
-  Tailwind CSS will handle most of the layout, spacing, and component styling.
-*/
-
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* You can add any custom CSS here if needed, but Tailwind is preferred */
 
-  color-scheme: light dark;
-  color: #213547;
-  background-color: #ffffff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Optional: Custom scrollbar styling for the About Me section's text content */
+/* This targets Webkit browsers (Chrome, Safari) */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  /* Ensure no conflicting display/alignment rules here */
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 10px;
 }
 
-/* Remove any custom img, a, button rules from here */
-/* Tailwind will handle these. */
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  }
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
 }
