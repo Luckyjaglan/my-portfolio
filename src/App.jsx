@@ -87,7 +87,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-white max-w-4xl mx-auto">
         <p className="text-lg sm:text-xl font-medium text-sky-300 mb-2 tracking-wider">
-          SOFTWARE ENGINEER | CSc STUDENT
+          ASPIRING ENGINEER | CSE STUDENT
         </p>
         <h2 className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">
           Hello, I'm Lucky Jaglan
@@ -160,8 +160,8 @@ const AboutSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">About Me</h2>
           <div className="flex-grow overflow-y-auto pr-2">
             <p className="text-lg leading-relaxed text-gray-700">
-              I'm Lucky Jaglan, a Computer Science & Engineering student at SRM University, India, specializing in Data Science and Artificial Intelligence. With a strong foundation in web development and a growing interest in full-stack technologies, I love turning ideas into real-world applications.<br></br><br></br>
-I’m currently focused on building efficient, user-friendly projects using tools like JavaScript, React, Python, and MySQL. Whether it's front-end design or back-end logic, I enjoy learning new skills and solving complex problems. I'm also exploring DevOps, Git workflows, and cloud deployment to round out my skill set.<br></br><br></br>
+              I'm Lucky Jaglan, a Computer Science & Engineering student at SRM University, India, specializing in Data Science and Artificial Intelligence. With a strong foundation in web development and a growing interest in DSA, I love turning ideas into real-world applications.<br></br><br></br>
+I’m currently focused on building efficient, user-friendly projects using tools like JavaScript, React, Python, and MySQL. Whether it's front-end design or back-end logic, I enjoy learning new skills and solving complex problems. I'm also exploring DSA, DevOps, Git workflows, and cloud deployment to round out my skill set.<br></br><br></br>
 When I’m not coding, I’m usually learning something new, refining my skills, or contributing to academic and personal tech projects.
             </p>
           </div>
