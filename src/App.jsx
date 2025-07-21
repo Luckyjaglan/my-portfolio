@@ -173,7 +173,7 @@ const AboutSection = () => {
 
         {/* Text Content on Right Half - Containerized and scrollable if content overflows */}
         {/* This div will now stretch to match the responsive height of the image */}
-        <div className="w-full md:w-1/2 text-center md:text-left bg-white p-8 rounded-2xl shadow-xl flex flex-col">
+        <div className="w-full md:w-1/2 text-center md:text-left bg-pink-100 p-8 rounded-2xl shadow-xl flex flex-col">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">About Me</h2>
           <div className="flex-grow overflow-y-auto pr-2">
             <p className="text-lg leading-relaxed text-gray-700">
