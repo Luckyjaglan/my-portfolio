@@ -1,4 +1,3 @@
-// src/components/ProjectsSection.jsx
 import React, { useState } from 'react';
 import { allProjects } from '../data/projects.js';
 import ProjectCard from './ProjectCard';
@@ -9,7 +8,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.4, // Time between each card animating in
+      staggerChildren: 0.4,
     },
   },
 };
@@ -65,12 +64,12 @@ const ProjectsSection = () => {
 
       <div className="max-w-5xl mx-auto relative">
         <motion.div
-          key={currentPage} // Important: key change triggers re-animation
+          key={currentPage}
           className="flex flex-col gap-16"
           style={{ opacity: contentOpacity, transition: `opacity ${transitionDuration}ms ease-in-out` }}
           variants={containerVariants}
           initial="hidden"
-          animate="visible" // Use animate instead of whileInView for keyed animations
+          animate="visible"
         >
           {projectsToDisplay.map((project) => {
              const MotionProjectCard = motion(ProjectCard);

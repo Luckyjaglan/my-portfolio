@@ -3,7 +3,6 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    // Darker, richer gray for footer background
     <footer className="bg-gray-900 text-white py-8 px-4 text-center">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-center space-x-6 mb-6">

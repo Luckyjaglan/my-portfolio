@@ -1,4 +1,3 @@
-// src/components/AboutSection.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -7,11 +6,9 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="px-4 py-20 bg-transparent pt-20 pb-10 border-b border-gray-300 overflow-hidden">
-      {/* The overflow-hidden on the section prevents scrollbars from appearing during animation */}
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-stretch gap-12">
         
-        {/* Animate Image from the left */}
-        <motion.div
+         <motion.div
           className="w-full md:w-1/2 flex justify-center"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -27,8 +24,7 @@ const AboutSection = () => {
           />
         </motion.div>
 
-        {/* Animate Text Content from the right */}
-        <motion.div
+       <motion.div
           className="w-full md:w-1/2 text-center md:text-left bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl flex flex-col"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

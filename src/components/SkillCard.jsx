@@ -1,4 +1,3 @@
-// src/components/SkillCard.jsx
 import React from 'react';
 
 const SkillCard = ({ skill, icon, colorClass }) => {

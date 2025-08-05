@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useSmoothScroll } from '../hooks/useSmoothScroll';
 import ThemeToggle from './ThemeToggle';
@@ -11,7 +10,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // THE FIX IS HERE: We check if navbarRef.current exists before using it.
       if (navbarRef.current && window.scrollY > lastScrollY && window.scrollY > navbarRef.current.offsetHeight) {
         setIsVisible(false);
       } else {
@@ -28,7 +26,7 @@ const Navbar = () => {
     <nav
       id="navbar"
       ref={navbarRef}
-      // Added proper dark mode background and text colors
+      
       className={`fixed w-full z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-lg transition-transform duration-300 ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}

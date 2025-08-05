@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // This line tells Tailwind to scan all your React files for classes
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class', 
   theme: {

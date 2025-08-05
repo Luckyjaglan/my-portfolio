@@ -1,12 +1,7 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* You can add any custom CSS here if needed, but Tailwind is preferred */
-
-/* Optional: Custom scrollbar styling for the About Me section's text content */
-/* This targets Webkit browsers (Chrome, Safari) */
 .overflow-y-auto::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
 }

@@ -1,4 +1,3 @@
-// src/components/ProjectCard.jsx
 import React from 'react';
 import { Github } from 'lucide-react';
 
@@ -12,7 +11,6 @@ const ProjectCard = ({ project }) => {
         ${project.imageOnRight ? 'md:flex-row-reverse' : ''}
       `}
     >
-      {/* Project Image Container */}
       <div className="md:w-1/2 flex-shrink-0">
         <img
           src={project.image}
@@ -23,13 +21,11 @@ const ProjectCard = ({ project }) => {
         />
       </div>
 
-      {/* Project Details */}
       <div className="w-full md:w-1/2 flex flex-col text-center md:text-left">
         <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">{project.title}</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wider">DESCRIPTION</p>
         <p className="text-base text-gray-700 dark:text-gray-300 mb-4 flex-grow leading-relaxed">{project.description}</p>
 
-        {/* Built With section */}
         {project.builtWith && project.builtWith.length > 0 && (
           <div className="mb-4">
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">BUILT WITH</p>
@@ -44,7 +40,6 @@ const ProjectCard = ({ project }) => {
           </div>
         )}
 
-        {/* View Project Link & GitHub Icon */}
         <div className="flex justify-center md:justify-start mt-4 gap-4">
           <a
             href={project.link}

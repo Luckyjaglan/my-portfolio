@@ -1,4 +1,3 @@
-// src/components/SkillsSection.jsx
 import React from 'react';
 import { Code, Zap, Layers, Globe, Binary, Lightbulb, MessageSquare, Settings, Terminal } from 'lucide-react';
 import SkillCard from './SkillCard';
@@ -9,7 +8,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1, // This will make each child animate 0.1s after the previous one
+      staggerChildren: 0.1,
     },
   },
 };
@@ -67,8 +66,8 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className="...">
-      <motion.h2 /* Add the same animation as the projects title */
+    <section id="skills" className="min-h-[calc(100vh-theme(spacing.20))] px-4 py-20 bg-transparent pt-20 pb-10 relative border-b border-gray-300">
+      <motion.h2
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -78,7 +77,6 @@ const SkillsSection = () => {
         Skills
       </motion.h2>
 
-      {/* WRAP THE GRID IN A motion.div */}
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
         variants={containerVariants}
@@ -95,7 +93,7 @@ const SkillsSection = () => {
               skill={skill}
               icon={icon}
               colorClass={colorClass}
-              variants={itemVariants} // Apply item animation
+              variants={itemVariants}
             />
           );
         })}
